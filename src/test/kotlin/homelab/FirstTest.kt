@@ -15,13 +15,14 @@ import kotlin.test.assertEquals
 
 class FirstTest {
 
+    val analyzer = StandardAnalyzer()
+    val dir = ByteBuffersDirectory()
+    val indexWriterConfig = IndexWriterConfig(analyzer)
+    val indexWriter = IndexWriter(dir, indexWriterConfig)
+
+
     @Test
     fun name() {
-        val analyzer = StandardAnalyzer()
-        val dir = ByteBuffersDirectory()
-        val indexWriterConfig = IndexWriterConfig(analyzer)
-        val indexWriter = IndexWriter(dir, indexWriterConfig)
-
         val document = Document()
         document.add(Field("field01", "value of field01", TextField.TYPE_STORED))
         indexWriter.addDocument(document)
@@ -41,5 +42,23 @@ class FirstTest {
         println(topDocs.totalHits)
 
         assertEquals(1L, topDocs.totalHits.value)
+    }
+
+    @Test
+    fun second() {
+        FakeTestDataGenerator().generateOffers(10).forEach {
+            val document = Document()
+            with(document) {
+                add(Field("id", it.id.toString(), TextField.TYPE_STORED))
+                add(Field("owner", it.owner, TextField.TYPE_STORED))
+                add(Field("address", it.address, TextField.TYPE_STORED))
+                add(Field("city", it.city, TextField.TYPE_STORED))
+                add(Field("numberOfRooms", it.numberOfRooms.toString(), TextField.TYPE_STORED))
+                add(Field("price", it.price.toString(), TextField.TYPE_STORED))
+            }
+            indexWriter.addDocument(document)
+            indexWriter.close()
+
+        }
     }
 }

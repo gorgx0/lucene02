@@ -1,0 +1,114 @@
+{
+  "real_estate_offers": [
+    {
+      "property_id": "REO001",
+      "type": "Apartment",
+      "location": "123 Main Street, Cityville",
+      "price": "$300,000",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area_sqft": 1200,
+      "description": "Modern apartment with stunning city views. Spacious living room, updated kitchen, and close to public transportation.",
+      "image_url": "https://example.com/images/reo001.jpg"
+    },
+    {
+      "property_id": "REO002",
+      "type": "House",
+      "location": "456 Oak Avenue, Suburbia",
+      "price": "$500,000",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 2500,
+      "description": "Charming family home with a large backyard. Recently renovated kitchen and master suite. Close to schools and parks.",
+      "image_url": "https://example.com/images/reo002.jpg"
+    },
+    {
+      "property_id": "REO003",
+      "type": "Condo",
+      "location": "789 Pine Lane, Lakeside",
+      "price": "$250,000",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area_sqft": 800,
+      "description": "Lakefront condo with modern amenities. Open floor plan, balcony with a view, and access to community amenities.",
+      "image_url": "https://example.com/images/reo003.jpg"
+    },
+    {
+      "property_id": "REO004",
+      "type": "Townhouse",
+      "location": "101 Maple Street, Townsville",
+      "price": "$400,000",
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "area_sqft": 1800,
+      "description": "Two-story townhouse with a private courtyard. Updated kitchen, spacious bedrooms, and attached garage.",
+      "image_url": "https://example.com/images/reo004.jpg"
+    },
+    {
+      "property_id": "REO005",
+      "type": "Villa",
+      "location": "202 Sunset Drive, Countryside",
+      "price": "$700,000",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area_sqft": 3500,
+      "description": "Luxurious villa with a pool and garden. High-end finishes, home theater, and master suite with a private balcony.",
+      "image_url": "https://example.com/images/reo005.jpg"
+    },
+    {
+      "property_id": "REO006",
+      "type": "Duplex",
+      "location": "303 Elm Court, Downtown",
+      "price": "$600,000",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area_sqft": 2800,
+      "description": "Historic duplex with modern updates. Separate entrances for each unit, hardwood floors, and rooftop deck.",
+      "image_url": "https://example.com/images/reo006.jpg"
+    },
+    {
+      "property_id": "REO007",
+      "type": "Ranch",
+      "location": "404 Meadow Lane, Farmland",
+      "price": "$450,000",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area_sqft": 2000,
+      "description": "Spacious ranch-style home with a large backyard. Open floor plan, fireplace, and attached two-car garage.",
+      "image_url": "https://example.com/images/reo007.jpg"
+    },
+    {
+      "property_id": "REO008",
+      "type": "Penthouse",
+      "location": "505 Skyview Tower, Skyline City",
+      "price": "$1,200,000",
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "area_sqft": 4000,
+      "description": "Luxury penthouse with panoramic city views. High-end appliances, private elevator, and rooftop terrace.",
+      "image_url": "https://example.com/images/reo008.jpg"
+    },
+    {
+      "property_id": "REO009",
+      "type": "Cottage",
+      "location": "606 Pine Ridge, Woodlands",
+      "price": "$300,000",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area_sqft": 1000,
+      "description": "Cozy cottage surrounded by nature. Wood-burning fireplace, screened porch, and tranquil garden.",
+      "image_url": "https://example.com/images/reo009.jpg"
+    },
+    {
+      "property_id": "REO010",
+      "type": "Loft",
+      "location": "707 Industrial Street, Warehouse District",
+      "price": "$350,000",
+      "bedrooms": 1,
+      "bathrooms": 1.5,
+      "area_sqft": 1500,
+      "description": "Industrial loft with exposed brick and high ceilings. Open concept living, perfect for a creative workspace.",
+      "image_url": "https://example.com/images/reo010.jpg"
+    }
+  ]
+}
