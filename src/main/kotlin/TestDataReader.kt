@@ -5,17 +5,13 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
 
-fun main() {
-    val offers = offers2("test_data.json")
-    offers.forEach { println(it) }
-}
-
-fun offers2(fileName: String): List<RealEstateOffer> {
-    return File(fileName).readText().let {
-        offers(it)
+class TestDataReader {
+    fun offers(fileName: String): List<RealEstateOffer> {
+        return File(fileName).readText().let {
+            Json.decodeFromString<Offers>(it).offers
+        }
     }
 }
-private fun offers(it: String) = Json.decodeFromString<Offers>(it).offers
 
 @Serializable
 data class Offers(

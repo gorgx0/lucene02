@@ -57,8 +57,7 @@ class FirstTest {
                 add(Field("price", it.price.toString(), TextField.TYPE_STORED))
             }
             indexWriter.addDocument(document)
-            indexWriter.close()
-
         }
+        indexWriter.close()
     }
 }
